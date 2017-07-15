@@ -5,8 +5,12 @@
     <title>The Animal Hair Museum's Museum of Animal Hair Museums</title>
 
 <!-- Style Sheet -->
-    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/site.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/site.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/flexbox.css">
+    <link rel = "icon" href="img/ahmCrown32x32.jpg" sizes="32x32">
+    <link rel = "icon" href="img/ahmCrown192x192.jpg" sizes="192x192">
+    <link rel = "apple-touch-icon-precomposed" href="img/ahmCrown180x180.jpg">
 <!-- /Style Sheet -->
 
 <!-- Google Fonts -->
@@ -17,31 +21,77 @@
 <body>
 
 <!-- Header -->
-    <header>
+    <header class="main-header">
         <h1 class="name">
-            <a href="#" style="color:#000000; text-decoration: none;">
+            <a href="#" style="color: #000000; text-decoration: none">
                 animal hair museum
             </a></h1>
+        <ul class="main-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="archive.html">archive</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">store</a>
+            <div class="dropdown-content">
+                <a href="http://ahmcomic.bigcartel.com">Big Cartel</a>
+                <a href="https://maathaas.threadless.com">Threadless</a>
+            </li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">contact</a>
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com/AnimalHairMuseum">Facebook</a>
+                <a href="https://www.instagram.com/animalhairmuseum/">Instagram</a>
+                <a href="https://animalhairmuseum.tumblr.com">Tumblr</a>
+                <a href="mailto:animalhairmuseum@gmail.com">Email</a>
+            </li>
+            </div>
+        </ul>
     </header>
 <!-- /Header -->
 
-<!-- Left Button -->
-
-<!-- /Left Button -->
-
 <!-- Comic -->
-<div class="vcenter">
-        <img src="img/testCmx/testComic1.gif">
+<div class="row">
+    <div class="column">
+        <img src="img/testCmx/0124/panel1.jpg" onclick="location.href = 'comic/0124/index.html';" class="hover-shadow"></a>
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0125/panel1.jpg" onclick="location.href = 'comic/0125/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0126/panel1.jpg" onclick="location.href = 'comic/0126/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0127/panel1.jpg" onclick="location.href = 'comic/0127/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0128/panel1.jpg" onclick="location.href = 'comic/0128/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0129/panel1.jpg" onclick="location.href = 'comic/0129/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0130/panel1.jpg" onclick="location.href = 'comic/0130/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0131/panel1.gif" onclick="location.href = 'comic/0131/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0132/panel1.jpg" onclick="location.href = 'comic/0132/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0133/panel1.jpg" onclick="location.href = 'comic/0133/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0134/panel1.gif" onclick="location.href = 'comic/0134/index.html';" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="img/testCmx/0135/panel1.gif" onclick="location.href = 'comic/0135/index.html';" class="hover-shadow">
+    </div>
 </div>
-<!-- /Comic -->
 
-<!-- Right Button -->
-<!-- /Right Button -->
+<!-- /Comic -->
 
 <!-- Copyright -->
 <hr>
 <div class="copyright">
-Don't steal this please All comics are © Maat Haas 2017 
+Don't steal these please. All comics are © Maat Haas 2017 
     </div>
 <!-- /Copyright -->
 
