@@ -1,229 +1,179 @@
-
 /* site name at the top of the page */
-.nameLogoThing {
+/** AKA the header **/
+.name {
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #000000;
+  text-decoration: none;
   font-family: 'Special Elite', cursive;
   text-align: center;
-  color: #000000
+  background-color: #ffffff;
 }
-/* This is the navigation bar */
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #f2f2f2;
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    font-family: 'Special+Elite';
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* Not the navigation bar anymore */
 
 /****** Base ******/
-
-body {
-    font-family: 'Special+Elite', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 * {
   box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: 'Roboto Slab', serif;
-    text-transform: uppercase;
-    margin: 1em 0;
+body {
+    font-family: 'Special Elite', sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
 }
 
-h1 {
-  font-size: 2.5rem;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-h2 {
-  font-size: 1.75rem;
+/* Store Dropdown */
+
+li c, .dropbtn{
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li d, .dropbtn {
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-h4 {
-    font-size: 1.4rem;
-    line-height: 1;
-    text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    margin: 1em 0 .5em 0;
+li c:hover, .dropdown:hover .dropbtn {
+  background-color: #d4d4d4;
 }
+li d:hover, .dropdown:hover .dropbtn {
+  background-color: #d4d4d4;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d4d4d4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content c {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content d {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content c:hover {background-color: #d4d4d4}
+.dropdown-content d:hover {background-color: #d4d4d4}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* /Store Dropdown */
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  font-weight: 300;
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3 {
+  margin-top: 0;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.red {
-  color: #871719;
+img {
+  max-width: 100%;
 }
 
-.text-right {
-  text-align: right;
+/* Navigation */
+
+.active {
+  color: #d4d4d4;
+  background-color: #000000;
 }
 
-/****** Layout ******/
-.wrap {
-    padding: 2rem;
+.main-nav {
+  margin-top: 5px;
 }
 
-/****** Header ******/
-.header {
-  background-color: #d4d4d4;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: .95em;
   color: #000000;
+  text-transform: uppercase;
+  font-family: 'Special Elite', sans-serif;
+}
+
+.main-nav a:hover {
+  color: #d4d4d4;
+  background-color: #000000;
+}
+
+/* Layout Containers */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.banner,
+.main-footer {
   text-align: center;
 }
-
-nav {
-    font-family: 'Roboto Slab', serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+.banner {
+  color: #000000;
+  background: #d4d4d4;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
 }
-
-nav ul li {
-   display: block;
-}
-
-nav a {
-  padding: .5rem;
-  display: block;
+.main-footer {
+  background: #d4d4d4;
+  padding: 2em 0;
+  margin-top: 30px;
 }
 
-nav a:hover {
-  background-color: #871719;
+/* Page Elements */
+
+.logo {
+  width: 190px;
 }
-
-.hero-button {
-  font-size: 1.4rem;
-  font-family: 'Roboto Slab', serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 2px solid #FFFFFF;
-  padding: 6px 12px;
+.headline {
+  margin-bottom: 0;
 }
-
-.hero-button:hover {
-  border-color: #871719;
-  background-color: #871719;
-}
-
-
-/****** Newsletter ******/
-
-.nwsltr-label {
-    display: block;
-    margin: 0 0 16px 0;
-}
-
-.nwsltr-input {
-    display: block;
-    width: 100%;
-    border: 1px solid #c0af8e;
-    border-radius: 3px;
-    height: 40px;
-    padding: 8px;
-    margin: 0 0 10px 0;
-    font-size: 1rem;
-}
-
-.nwsltr-btn {
-    display: block;
-    width: 100%;
-    background-color: #871719;
-    border-radius: 3px;
-    color: #FFFFFF;
-    font-family: 'Roboto Slab', serif;
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: 40px;
-}
-
-.nwsltr-btn:disabled {
-  opacity: .5;
-}
-
-.nwsltr-btn:hover {
-  background-color: #800080;
-}
-
-.nwsltr {
-  background-color: #E8D5B5;
-}
-
-.small-txt, .validation-message {
-  font-size: .8rem;
-}
-
-.validation-message {
-  color: #ff0000;
-  display: none;
-  margin: .5rem 0;
+.feat-img {
+  border-radius: 5px;
 }
 
 /****** Copyright ******/
@@ -236,3 +186,23 @@ nav a:hover {
   color: #000000
 }
 
+/* Media Queries */
+
+@media (min-width: 769px){
+  .main-header,
+  .row {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+
+  .tagline {
+    font-size;
+  }
+
+}
+
+
+@media (min-width: 1025px){
+
+}

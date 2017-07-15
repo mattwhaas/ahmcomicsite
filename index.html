@@ -3,84 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>The Animal Hair Museum's Museum of Animal Hair Museums</title>
-<!-- Insert Style Sheet Here-->
-    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/site.css" />
-<!-- Insert Google Fonts Here -->
+
+<!-- Style Sheet -->
+    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/site.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/flexbox.css">
+    <link rel = "icon" href="img/ahmCrown32x32.jpg" sizes="32x32">
+    <link rel = "icon" href="img/ahmCrown192x192.jpg" sizes="192x192">
+    <link rel = "apple-touch-icon-precomposed" href="img/ahmCrown180x180.jpg">
+<!-- /Style Sheet -->
+
+<!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<!-- /Google Fonts -->
+
 </head>
-
 <body>
-<section id="nameLogoThing">
-    <div class="nameLogoThing">
-        <a href="index.html" style="color: #000000; text-decoration: none;">animal hair museum</a>
+
+<!-- Header -->
+    <header class="main-header">
+        <h1 class="name">
+            <a href="#" style="color: #000000; text-decoration: none">
+                animal hair museum
+            </a></h1>
+        <ul class="main-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="archive.html">archive</a></li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">store</a>
+            <div class="dropdown-content">
+                <a href="http://ahmcomic.bigcartel.com">Big Cartel</a>
+                <a href="https://maathaas.threadless.com">Threadless</a>
+            </li>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">contact</a>
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com/AnimalHairMuseum">Facebook</a>
+                <a href="https://www.instagram.com/animalhairmuseum/">Instagram</a>
+                <a href="https://animalhairmuseum.tumblr.com">Tumblr</a>
+                <a href="mailto:animalhairmuseum@gmail.com">Email</a>
+            </li>
+            </div>
+        </ul>
+    </header>
+<!-- /Header -->
+
+<!-- Left Button -->
+<!-- /Left Button -->
+
+<!-- Comic -->
+<div class="row">
+    <div class="primary col">
+        <img src="img/testCmx/0131/panel1.gif">
     </div>
-</section>
-    <!-- Header -->
-<div class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <div class="secondary col">
+        <img src="img/testCmx/0131/panel2.gif">
+    </div>
 </div>
-    <!-- /Header -->
-
-    <!-- Left Button -->
-
-    <!-- /Left Button -->
-
-    <!-- Comic Mobile (sm)-->
-
-<div class="container">
-    <div id="slideshow">
-        <img alt="slideshow" src="img/testCmx/testComic1.gif" id="imgClickAndChange" onclick="changeImage()" />
+<div class="row">
+    <div class="primary col">
+        <img src="img/testCmx/0131/panel3.gif">
+    </div>
+    <div class="secondary col">
+        <img src="img/testCmx/0131/panel4.gif">
     </div>
 </div>
-<script>
-    var imgs=["img/testCmx/testComic2.gif", "img/testCmx/testComic3.gif"];
+<!-- /Comic -->
+<a href="comic/0138/">next</a>
+<!-- Right Button -->
+<!-- /Right Button -->
 
-    function changeImage(dir) {
-        var img = document.getElementById("imgClickAndChange");
-        img.src = imgs[imgs.indexOf(img.src) + (dir || 1)] || imgs[dir ? imgs.length - 1 : 0];
-    }
-
-    document.onkeydown = function(e) {
-        e = e || window.event;
-        if (e.keyCode == '37') {
-            changeImage(-1)
-        } else if (e.keyCode == '39') {
-            changeImage()
-        }
-    }
-</script>    
-    
-    <!-- /Comic Mobile (sm)-->
-
-    <!-- Comic Medium (md)-->
-<section id="comic">
-    <div class="comic">
-        <img src="img/testCmx/testComic1.gif">
-    </div>
-</section>
-    <!-- /Comic Medium (md)-->
-
-    <!-- Comic Full Screen (lg)-->
-    <!-- /Comic Full Screen (lg)-->
-
-    <!-- Right Button -->
-    <!-- /Right Button -->
+<!-- Copyright -->
 <hr>
 <div class="copyright">
-Don't steal this please All comics are © Maat Haas 2017 
+Don't steal these please. All comics are © Maat Haas 2017 
     </div>
+<!-- /Copyright -->
 
-    <!-- Footer -->
-
-    <!-- /Footer -->
-
-
-    <!-- Insert JavaScript Here -->
+<!-- JavaScript -->
 <script src="js/app.js"></script>
+<!-- /JavaScript -->
 </body>
 </html>

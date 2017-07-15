@@ -8,15 +8,15 @@ function myFunction() {
     }
 }
 
-<script>
-    var imgs=["img/testCmx/testComic1.gif", "img/testCmx/testComic2.gif", "img/testCmx/testComic3.gif"];
+//this doesn't work yet
+var imgs=["img/testCmx/testComic2.gif", "img/testCmx/testComic3.gif"];
 
-    function changeImage(dir) {
+function changeImage(dir) {
         var img = document.getElementById("imgClickAndChange");
         img.src = imgs[imgs.indexOf(img.src) + (dir || 1)] || imgs[dir ? imgs.length - 1 : 0];
     }
 
-    document.onkeydown = function(e) {
+document.onkeydown = function(e) {
         e = e || window.event;
         if (e.keyCode == '37') {
             changeImage(-1) //left <- show Prev image
@@ -25,4 +25,3 @@ function myFunction() {
             changeImage()
         }
     }
-</script>    
