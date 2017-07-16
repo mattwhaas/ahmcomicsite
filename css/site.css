@@ -330,14 +330,15 @@ img.hover-shadow {
     width: 80%;
     margin: 0 auto;
     max-width: 1150px;
+    justify-content: center;
   }
-
-  .tagline {
-    font-size;
-  }
-
 }
 
+@media (max-width: 769px){
+  .navigation {
+    font-size: 1rem;
+  }
+}
 
 @media (min-width: 1025px){
 
